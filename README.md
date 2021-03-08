@@ -28,6 +28,7 @@ This application includes three functions:
   - Accesses an image via its direct URL, and opens it as a Pillow Image object to display in application.
 - `update()`
   - Updates the two labels with the current time and image pulled from API via `get_dog_image()`. `show_feature`, which is controlled by LaunchDarkly's feature flag determines whether an image is display or just text.
+  - To disable the display of images and making requests to `https://dog.ceo/api/breeds/image/random` endpoint, we can make use of the feature flag `show-pup` on LaunchDarkly UI to enable/disable the feature.
   - The recursive `after()` at the end of the function runs the function again after 60 milliseconds.
 
 From Lines 57 to 59, we are creating an instance of LaunchDarkly's Python SDK, and supplying it with the SDK key -- retrievable from [Account Settings](https://app.launchdarkly.com/settings/projects).
