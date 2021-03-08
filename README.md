@@ -2,10 +2,12 @@
 ![GIF Demo](https://haypublic.s3.amazonaws.com/ld.gif)
 - [App: Pup Slideshow with Feature Flag](#app-pup-slideshow-with-feature-flag)
   - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
     - [Running the Application](#running-the-application)
+  - [Application Outline](#application-outline)
 ___
 ## Getting Started
-###Prerequisites
+### Prerequisites
 To run `pup.py`, your Python version should be ≥ 3.6, and the following Python packages should be installed:
 - requests>=2.25.1
 - pillow>=8.1.2
@@ -15,7 +17,9 @@ Authorization from LaunchDarkly is also required to toggle the feature flag. [Re
 ### Running the Application
 To run `pup.py`, in Terminal/Command Line, run `python3 pup.py` (replace `python3` with your alias for Python ≥3.6).
 
-##Application Outline
+___
+
+## Application Outline
 
 This application includes three functions:
 - `get_dog_image()`
